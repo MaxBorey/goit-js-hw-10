@@ -10,25 +10,27 @@
 </head>
 
 <body>
-  <form class="form">
-    <label>
-      Delay (ms)
-      <input type="number" name="delay" required step="1000" />
-    </label>
-    <fieldset>
-      <legend>State</legend>
+  <div class="container">
+    <form class="form">
       <label>
-        <input type="radio" name="state" value="fulfilled" required />
-        Fulfilled
+        Delay (ms)
+        <input type="number" name="delay" required step="1000" />
       </label>
-      <label>
-        <input type="radio" name="state" value="rejected" required />
-        Rejected
-      </label>
-    </fieldset>
-    <button type="submit">Create notification</button>
-  </form>
-  <p><a href="./index.html" class="back-link">Go back</a></p>
+      <fieldset>
+        <legend>State</legend>
+        <label>
+          <input type="radio" name="state" value="fulfilled" required />
+          Fulfilled
+        </label>
+        <label>
+          <input type="radio" name="state" value="rejected" required />
+          Rejected
+        </label>
+      </fieldset>
+      <button type="submit">Create notification</button>
+    </form>
+    <p><a href="./index.html" class="back-link">Go back</a></p>
+  </div>
 </body>
 <script type="module" src="./js/2-snackbar.js"></script>
 
